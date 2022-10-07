@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <link href="/src/assets/img/logo.svg" rel="icon" type="image/svg+xml"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Meepo Chat</title>
+    <link href="/src/css/pages/template.css" rel="stylesheet"/>
+    <link href="/src/css/pages/connection.css" rel="stylesheet"/>
+    <link href="/src/css/pages/chat.css" rel="stylesheet"/>
+</head>
+<body>
+<section class="connectionPage">
+    <header>
+        <img alt="" class="logo" src="./src/assets/img/logo.svg">
+        <p class="paragraph">Votre mode de communication <span>scrypté</span></p>
+    </header>
+    <main>
+        <form class="profile">
+            <div class="profile-row">
+                <h2>Identité</h2>
+            </div>
+            <div class="profile-row">
+                <p class="paragraph-bold">Avatar</p>
+                <div class="avatars">
+                    <label class="avatar-radio">
+                        <input type="radio" name="avatar" value="divinity" checked>
+                        <img src="./src/assets/img/avatar/divinity.svg" alt="Divinité">
+                    </label>
+                    <label class="avatar-radio">
+                        <input type="radio" name="avatar" value="pharaon">
+                        <img src="./src/assets/img/avatar/pharaon.svg" alt="Pharaon">
+                    </label>
+                    <label class="avatar-radio">
+                        <input type="radio" name="avatar" value="karhou">
+                        <img src="./src/assets/img/avatar/karhou.svg" alt="Karhou">
+                    </label>
+                </div>
+            </div>
+            <div class="profile-row">
+            <label for="name" class="paragraph-bold">Pseudonyme</label>
+            <input id="name" placeholder="Anonymous" required type="text"/>
+            </div>
+            <button type="submit">Rejoindre</button>
+        </form>
+    </main>
+</section>
+<section class="chatPage">
+    <header>
+        <div class="left">
+            <img alt="" class="logo" src="./src/assets/img/logo.svg">
+            <p class="paragraph catchPhrase">Votre mode de communication scrypté</p>
+        </div>
+        <div class="right">
+            <p class="paragraph">Mode scrypté</p>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div class="left">
+            <div class="rooms">
+                <div class="room active" data-room="general">
+                    <p class="paragraph">Temple</p>
+                    <div class="status-bar"></div>
+                </div>
+                <div class="room" data-room="pyramide">
+                    <p class="paragraph">Pyramide</p>
+                    <div class="status-bar"></div>
+                </div>
+                <div class="room" data-room="tombeau">
+                    <p class="paragraph">Tombeau</p>
+                    <div class="status-bar"></div>
+                </div>
+            </div>
+            <div class="users"></div>
+        </div>
+        <div class="right">
+            <div class="lexique-accordion">
+                <div class="left-accordion">
+                    <img alt="" src="">
+                    <h3 class="lexique-accordion-title paragraph-bold">Lexique</h3>
+                </div>
+                <div class="right-accordion">
+                    <img alt="" class="icon-show" src="./src/assets/img/icons/hide.svg">
+                    <img alt="" class="icon-hide" src="./src/assets/img/icons/show.svg">
+                </div>
+            </div>
+            <div class="lexique-panel">
+                <div class="chars">
+                    <div class="char">
+                        <p class="symbol">A</p>
+                        <p class="letter">A</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">B</p>
+                        <p class="letter">B</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">C</p>
+                        <p class="letter">C</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">D</p>
+                        <p class="letter">D</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">E</p>
+                        <p class="letter">E</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">F</p>
+                        <p class="letter">F</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">G</p>
+                        <p class="letter">G</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">H</p>
+                        <p class="letter">H</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">I</p>
+                        <p class="letter">I</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">J</p>
+                        <p class="letter">J</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">K</p>
+                        <p class="letter">K</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">L</p>
+                        <p class="letter">L</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">M</p>
+                        <p class="letter">M</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">N</p>
+                        <p class="letter">N</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">O</p>
+                        <p class="letter">O</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">P</p>
+                        <p class="letter">P</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">Q</p>
+                        <p class="letter">Q</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">R</p>
+                        <p class="letter">R</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">S</p>
+                        <p class="letter">S</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">T</p>
+                        <p class="letter">T</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">U</p>
+                        <p class="letter">U</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">V</p>
+                        <p class="letter">V</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">W</p>
+                        <p class="letter">W</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">X</p>
+                        <p class="letter">X</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">Y</p>
+                        <p class="letter">Y</p>
+                    </div>
+                    <div class="char">
+                        <p class="symbol">Z</p>
+                        <p class="letter">Z</p>
+                    </div>
+                </div>
+            </div>
+            <div class="messages"></div>
+            <form class="message">
+                <input autocomplete="off" id="message" placeholder="Votre message scrypté..." required type="text"/>
+                <button type="submit">Transmettre</button>
+            </form>
+        </div>
+    </main>
+</section>
+<script src="src/js/pages/connection.js" type="module"></script>
+<script src="src/js/pages/chat.js" type="module"></script>
+</body>
+</html>

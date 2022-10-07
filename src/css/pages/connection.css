@@ -1,0 +1,113 @@
+section.connectionPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary_light);
+    background-image: url('../../../src/assets/img/background/connexion.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+section.connectionPage header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 32vh;
+}
+
+section.connectionPage header p{
+    font-size: 1.25rem;
+}
+
+section.connectionPage header p span{
+    font-style: italic;
+    font-weight: 600;
+}
+
+section.connectionPage form.profile{
+    display: flex;
+    flex-direction: column;
+    width: 32vw;
+    min-width: 360px;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+}
+
+section.connectionPage form.profile .profile-row{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+section.connectionPage main form.profile .paragraph-bold{
+    color: var(--color-primary);
+}
+
+/*AVATARS*/
+
+section.connectionPage main form.profile .avatars{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+section.connectionPage main form.profile  label.avatar-radio{
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-secondary);
+    padding: .75rem;
+    border-radius: 50%;
+}
+
+section.connectionPage main form.profile [type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+section.connectionPage main form.profile [type=radio] + img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+section.connectionPage main form.profile label.avatar-radio:has([type=radio]:checked) {
+    outline: 2px solid var(--color-primary);
+}
+
+section.connectionPage main form.profile label.avatar-radio:has([type=radio]:checked) img{
+    width: 52px;
+    height: 52px;
+}
+
+section.connectionPage main form.profile input{
+    width: 100%;
+    padding: 6px 16px 8px 16px;
+    border: 2px solid var(--color-primary);
+    border-radius: 64px;
+    color: var(--color-primary);
+    font-family: 'GeneralSans', sans-serif;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.015em;
+}
+
+section.connectionPage main form.profile button[type=submit] {
+    padding: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
